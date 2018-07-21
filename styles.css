@@ -1,0 +1,34 @@
+
+body {
+    font-family: 'Franklin Gothic Medium';
+}
+
+span.remove-link { 
+    color: red;
+    cursor: pointer; 
+}
+
+.input-box {
+    background-color:lightyellow;
+    border-radius: 1%;
+}
+
+.main-pane {
+    margin: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+article {
+    margin: 10px;
+}
+
+.dictionary-pane {
+    margin: 5px;
+}
+
+#known-translations {
+    list-style-type: none;
+}

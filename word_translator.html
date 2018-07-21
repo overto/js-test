@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JS Test</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="main-pane container-fluid">
+    <section class="row">
+      <article class="col-xs-12 col-md-6">
+        <h2>Word Translator</h2>
+        <p>
+          Welcome! This is a word translation tool. You provide the source words and the words that they should be translated to, and
+          the website does the rest! The translator already knows some words, but it's important to remember that any words
+          you teach it will be forgotten when the page is refreshed.
+        </p>
+        <div>
+          <form>
+            <div class="form-group">
+              <label for="source-word">Source word:</label>
+              <input type="text" class="form-control" id="source-word" placeholder="party">
+            </div>
+            <div class="form-group">
+              <label for="translation-word">Translation word:</label>
+              <input type="text" class="form-control" id="translation-word" placeholder="fiesta">
+            </div>
+            <button type="button" id="learn-translate" class="btn btn-primary">Learn Translation!</button>
+          </form>
+        </div>
+      </article>
+      <article class="dictionary-pane col-xs-12 col-md-5 well">
+        <h2>Known Translations:</h2>
+        <p>
+          These are all the words I know! They're in the form of "known word" -> "translation" in the list below.
+        </p>
+        <p>Hint: click on the "remove" link next a known to remove a known translation</p>
+        <ul id="known-translations"></ul>
+      </article>
+      <article class="col-xs-12 col-md-6">
+        <h4>Translator</h4>
+        
+        <div class="form-group">
+            <label for="translate-box">You can enter a sentence into the textbox below in order to use the known translations to translate a sentence.</label>
+            <textarea class="form-control input-box" rows="5" id="translate-box" placeholder="Enter the sentence to translate here!"></textarea>
+          </div>
+        <!--<textarea class="input-box" name="translate-box" id="translate-box" cols="50" rows="10" placeholder="Enter the sentence to translate here!"></textarea>-->
+        <p>
+          <span id="translation-result">And your translation will appear here!</span>
+        </p>
+      </article>
+    </section>
+  </div>
+
+</body>
+
+</html>
