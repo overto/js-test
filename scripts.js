@@ -19,7 +19,7 @@ $(document).ready(function() {
         
         // Check if translation exists before adding it
         if (sourceWord in translations) {
-            alert("Translations exists!");
+            alert("This translation exists!");
             return;
         }
         else {
